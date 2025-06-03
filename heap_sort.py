@@ -49,8 +49,8 @@ def heap_sort(nums_list: list) -> None:
     in place sort implemented using heaps
 
     1) builds max heap from unsorted list
-        max element is now at nums_list[1]
-    2) swap elements nums_list[n] and nums_list[1]
+        max element is now at nums_list[0]
+    2) swap elements nums_list[n] and nums_list[0]
         this moves the maximum element to the end of the considered heap
         discard index n (index of max element) from the considered heap by decrementing heap size (heap_end_index)
     3) recreate max heap property on remaining considered elements by running max_heapify() again
